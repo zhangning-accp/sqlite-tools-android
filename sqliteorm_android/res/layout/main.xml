@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="建库"
+            android:id="@+id/btn_create_db"
+            android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:onClick="createDB"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询单个"
+            android:id="@+id/btn_select_one" android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_select"
+            android:onClick="selectOne"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询多个"
+            android:id="@+id/btn_select" android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_create_db"
+            android:onClick="select"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:id="@+id/btn_delete" android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_select_one"
+            android:onClick="delete"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加"
+            android:id="@+id/btn_add" android:layout_below="@+id/btn_create_db"
+            android:layout_alignParentLeft="true"
+            android:onClick="add"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:id="@+id/btn_update" android:layout_below="@+id/btn_create_db"
+            android:layout_toRightOf="@+id/btn_add"
+            android:onClick="update"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="建表"
+            android:id="@+id/btn_create_tables" android:layout_below="@+id/btn_select_one"
+            android:layout_toRightOf="@+id/btn_update"
+            android:onClick="createTables"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删库"
+            android:id="@+id/btn_drop_data_base"
+            android:onClick="dropDB"
+            android:layout_below="@+id/btn_select_one"
+            android:layout_toRightOf="@+id/btn_create_tables"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删表"
+            android:layout_below="@+id/btn_delete"
+            android:layout_toRightOf="@+id/btn_drop_data_base"
+            android:onClick="dropTables"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_show"
+            android:text="hello!"
+            android:layout_below="@+id/btn_add"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+
